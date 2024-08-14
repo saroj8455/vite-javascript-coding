@@ -16,7 +16,7 @@ function getLargestElement(arr) {
   return max;
 }
 
-console.log(getLargestElement([1, 3, 4, 2, 5, 8, 10, 30]));
+// console.log(getLargestElement([1, 3, 4, 2, 5, 8, 10, 30]));
 const inputArray = [3, 1, 4, 2, 5, 8, 10, 30];
 
 function smallItem(inputArr) {
@@ -40,7 +40,7 @@ function checkSubset(parentArry, subsetArry) {
   });
 }
 
-console.log(checkSubset(arr1, arr2));
+// console.log(checkSubset(arr1, arr2));
 
 const numbers = [45, 4, 9, 16, 25];
 let someOver18 = numbers.some(myFunction);
@@ -49,15 +49,15 @@ let someOver17 = numbers.some((val) => val > 17);
 function myFunction(value, index, array) {
   return value > 18;
 }
-console.log(someOver18);
-console.log(someOver17);
+// console.log(someOver18);
+// console.log(someOver17);
 
 const ar = [1, 2, 3];
 const ar1 = [2, 3, 4, 5];
 function intersection(ar, ar1) {
   const st = ar.filter((val) => ar1.includes(val));
-  console.log(st);
+  // console.log(st);
 }
 
 intersection(ar, ar1);
-console.log(null + 1);
+// console.log(null + 1);

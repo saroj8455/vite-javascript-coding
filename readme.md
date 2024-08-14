@@ -4,21 +4,13 @@
 
 ### 1. Introduction to JavaScript
 
-- What is JavaScript?
-- History of JavaScript
-- Features of JavaScript
-- Basic syntax and data types
-- Variables, data types, and operators
-- Control structures (if/else, switch, loops)
-- Functions and function expressions
-- Object-Oriented Programming (OOP) concepts
-- DOM and BOM
-- Event handling
-- Ajax and JSON
-- Regular expressions
-- Error handling and debugging
-- Best practices and coding standards
-- Advanced topics (closures, prototypes, etc.)
-- Real-world applications and examples
-- Common pitfalls and gotchas
-- Browser compatibility and quirks
+- Basic
+- Syntax
+- Variables
+- Data Types (Primitive vs. Non-Primitive)
+  `rimitive data types are also known as in-built data types. They are directly stored in memory, and their values are not subject to change once they are assigned. String, Boolean, Number, BigInt, Null, Undefined, and Symbol are the six primitive data types available in JavaScript.`
+  `Non-Primitive: Objects (arrays, functions) are also called object references.`
+
+- Control Structures
+- Loops
+- Functions
