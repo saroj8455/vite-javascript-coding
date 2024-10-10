@@ -61,3 +61,112 @@ function intersection(ar, ar1) {
 
 intersection(ar, ar1);
 // console.log(null + 1);
+
+function fibonacci(n) {
+  if (n <= 0) {
+    return 'Input should be a positive integer';
+  } else if (n == 1) {
+    return 0;
+  } else if (n == 2) {
+    return 1;
+  } else {
+    let fibArr = [0, 1];
+    while (fibArr.length < n) {
+      fibArr.push(fibArr[fibArr.length - 1] + fibArr[fibArr.length - 2]);
+    }
+    // return fibArr[fibArr.length - 1];
+    return fibArr;
+  }
+}
+
+// console.log(fibonacci(3));
+
+function fibo(n) {
+  // base case
+  if (n <= 0) return 'Input should be a positive Integer';
+  if (n == 1) return 0;
+  if (n == 2) return 1;
+
+  let prev = 0,
+    curr = 1;
+  let fiboSeries = [0, 1];
+  // base case upto 2 so that's why i=3
+  for (let i = 3; i <= n; i++) {
+    let next = prev + curr;
+    prev = curr;
+    curr = next;
+    fiboSeries.push(curr);
+  }
+  // return curr; op: last index : 34
+  return fiboSeries;
+}
+
+console.log(fibo(10));
+const nums = [0, 1, 1, 2, 3];
+
+function totalNums(nums) {
+  let sum = 0;
+  // for loop
+  // for (let i = 0; i < nums.length; i++) {
+  //   sum += nums[i];
+  // }
+
+  // while loop
+  let i = 0;
+  while (i < nums.length) {
+    sum += nums[i];
+    i++;
+  }
+
+  return sum;
+}
+
+// console.log(totalNums(nums));
+console.log(42 === '42');
+console.log(42 + '42');
+console.log(1 + true);
+if (1) {
+  console.log('-1 true');
+} else {
+  console.log('null false');
+}
+console.log(2 * '10');
+
+// console.log(null == undefined);
+// console.log(null === undefined);
+// console.log('5' == 5);
+// console.log('5' === 5);
+// console.log([] == false);
+// console.log([] == '');
+// console.log('' == false);
+// console.log([] == {});
+
+Array.prototype.customForEach = function (cb) {
+  for (let i = 0; i < this.length; i++) {
+    cb(this[i], i, this);
+  }
+};
+
+Array.prototype.customForEachTwo = function (callback, thisctx) {
+  if (typeof callback !== 'function') throw 'pass a callback function!';
+
+  const length = this.length;
+  let i = 0;
+  while (i < length) {
+    callback.call(thisctx, this[i], this);
+    i++;
+  }
+};
+
+const marks = [1, 2, 3, 4, 5];
+marks.customForEach((mark) => {
+  console.log(mark);
+});
+
+// marks.customForEachTwo({});
+
+const os = {
+  cpus: 'num of core 1',
+  cpus: 'num of core 2',
+};
+console.log(os.cpus);

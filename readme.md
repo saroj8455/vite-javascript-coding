@@ -1,6 +1,4 @@
-## Javascript Topics to Cover
-
-==========================
+aatwyWWWYLYWWWW.......KU YYF,,,MLEYLEW&EWLLLE?KLETLAETETEETETLLTEETELAETLK'"JJLLMIL,M,L."
 
 ### 1. Introduction to JavaScript
 
